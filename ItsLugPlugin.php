@@ -21,7 +21,10 @@ class ItsLugPlugin extends BasePlugin
 	{
 		return '1.0.0';
 	}
-
+  public function getSchemaVersion()
+  {
+    return '1.0.0';
+  }
 	public function getDeveloper()
 	{
 		return 'IT Solution (Hung Dinh)';
@@ -31,6 +34,11 @@ class ItsLugPlugin extends BasePlugin
 	{
 		return 'https://gl.it-s.vn/area51/itslug';
 	}
+  public function getReleaseFeedUrl()
+  {
+    return '';
+  }
+
 	public function init()
 	{
     if ( craft()->request->isCpRequest() && craft()->userSession->isLoggedIn() )
