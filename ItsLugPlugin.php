@@ -33,7 +33,10 @@ class ItsLugPlugin extends BasePlugin
 	}
 	public function init()
 	{
-		craft()->templates->includeJsResource('itslug/js/itslug.js');
+    if ( craft()->request->isCpRequest() && craft()->userSession->isLoggedIn() )
+    {
+      craft()->templates->includeJsResource('itslug/js/itslug.js');
+    }
 
 	}
 

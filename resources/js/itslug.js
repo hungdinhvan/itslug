@@ -33,13 +33,18 @@ var toSlug = function(title)
 
 };
 // Overwrite SlugGenerator of Craft
-Craft.SlugGenerator = function (){
+if(typeof(Craft) == 'object'){
+  Craft.SlugGenerator = function (){
     $('#slug').val( toSlug( $('#title').val() ) );
-};
+  };
 
-$(function(){
-    $('#title').on("keydown paste  keyup  blur change", function(){
+  $(function(){
+    if( $("input[type='hidden'][name='entryId']").length == 0 && $("input[type='hidden'][name='productId']").length == 0 )
+    {
+      $('#title').on("keydown paste  keyup  blur change", function(){
         $('#slug').val( toSlug( $(this).val() ) );
-    });
+      });
+    }
 
-})
+  })
+}
