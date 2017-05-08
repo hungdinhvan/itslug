@@ -1,5 +1,13 @@
 [
   {
+    "version": "1.0.1",
+    "downloadUrl": "https://github.com/tetaba/itslug/archive/master.zip",
+    "date": "2017-05-07T2:58:00+07:00",
+    "notes": [
+      "[Fixed] Private JS"
+    ]
+  },
+  {
     "version": "1.0.0",
     "downloadUrl": "https://github.com/tetaba/itslug/archive/master.zip",
     "date": "2017-05-07T2:37:00+07:00",

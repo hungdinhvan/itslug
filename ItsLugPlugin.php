@@ -14,12 +14,12 @@ class ItsLugPlugin extends BasePlugin
 	}
 	public function getDescription()
 	{
-		return 'Thay thế hàm convert slug mặc định của  ';
+		return 'Thay thế hàm convert slug mặc định của  Craft';
 	}
 
 	public function getVersion()
 	{
-		return '1.0.0';
+		return '1.0.1';
 	}
   public function getSchemaVersion()
   {
@@ -36,7 +36,7 @@ class ItsLugPlugin extends BasePlugin
 	}
   public function getReleaseFeedUrl()
   {
-    return '';
+    return 'https://raw.githubusercontent.com/tetaba/itslug/master/releases.json';
   }
 
 	public function init()
